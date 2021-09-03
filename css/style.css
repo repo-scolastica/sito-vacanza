@@ -227,5 +227,15 @@ footer .fonti nav ul li a::after {
         
     }
 
+    #cambridge main article header img { 
+    	width: 60%;
+    }
 
+    #harvard main article header img { 
+        width: 130%;
+    }
+
+    #polimi main article header img { 
+        width: 110%;
+    }
 }
