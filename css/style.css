@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap'); /* font-family: 'Lato', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap'); /* font-family: 'Roboto', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400&display=swap'); /* font-family: 'Noto Sans JP', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400&display=swap'); /* font-family: 'Source Sans Pro', sans-serif; */
+
+:root {
+
+    /* Colori */
+    --grey: #2B2A27;
+    --grey-dark: #262522;
+    --grey-light: #383733;
+
+    --white: #EDE0CE;
+    --white-dark: #9E9587;
+    
+    --blue: #26A6A6;
+    --blue-dark: #2A737D;
+    --red: #CC4A2C;
+    --red-dark: #BB3327;
+    --green: #BCCF29;
+    --green-dark: #AEB533;
+    /* Colori */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    color: var(--white);
+    font-weight: 400;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;    /* Pagina Fluente */
+    font-size: 10px;            /* 1rem = 10px */
+}
+
+body {
+    box-sizing: border-box;
+    background-color: var(--grey);
+}
+
+h1 h2, h3, h4, h5, h6 { 
+    color: var(--white-dark);
+}
+
+h1 { font-size: 6rem; }
+h2 { font-size: 4rem; }
+h3 { font-size: 3rem; }
+h4 { font-size: 2rem; } 
+
+.container {
+    width: 90%;
+    margin: 2rem auto;
+    padding-bottom: 4rem;
+    background-color: var(--grey-light);
+    
+    /* display: flex; */
+}
+
+/* ================================================================= */
+
+.container .heading {
+    margin: 2rem auto;
+    background-color: var(--red);
+}
+
+.container .heading header {
+    display: flex;
+    justify-content: center;
+}
+
+.container .heading header h1 {
+    font-size: 6rem;
+    text-decoration: underline;
+}
+
+/* ================================================================= */
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    flex-flow: column wrap;
+    flex-direction: column;
+    padding-bottom: 4rem;
+}
+
+.school { 
+    margin: 9rem;
+    background-color: var(--blue-dark);
+}
+
+.school header {
+    margin: 2rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.school header h1 {
+    font-size: 2.2rem;
+}
+
+.school header i {
+    color: var(--white);
+    font-size: 2.2rem;
+}
+
+.school main {
+    display: flex;
+    background-color: var(--grey-dark);
+}
+
+.school header a { text-decoration: none; }
+
+.school main p {
+    margin: 2rem;
+    font-size: 2rem;
+}
+
+.school main h1, h2, h3, h4 { 
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
+.school main article {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.school main article header {
+    margin: 4rem;
+    width: 80%;
+    display: flex;
+    align-items: space-between;
+    justify-items: space-between;
+}
+
+main article header section {
+    margin-top: 3rem;
+}
+
+main article header img {
+    width: 90%;
+}
+
+#oxford main article header img {
+    width: 60%;
+}
+
+#cambridge main article header img { 
+    width: 20%;
+}
+
+#harvard main article header img { 
+    width: 50%;
+}
+
+#polimi main article header img { 
+    width: 35%;
+}
+
+footer {
+    
+    border: 1px solid var(--blue);
+    margin: auto;
+
+    width: 90%;
+    background-color: var(--grey)
+}
+
+footer .fonti h2 {
+    margin: 4rem;
+    font-weight: 700;
+    background-color: var(--blue-dark);
+}
+
+footer .fonti nav ul {
+    margin: 4rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    list-style: none;
+    
+}
+
+footer .fonti nav ul li {
+    background-color: var(--grey-light)
+}
+
+footer .fonti nav ul li a {
+    font-size: 3rem;
+    text-decoration: none;
+    transition: ease-in-out .3s;
+}
+
+footer .fonti nav ul li a:hover {
+    color: var(--blue);
+}
+
+footer .fonti nav ul li a::after {
+    color: var(--blue);
+}
+
+@media (max-width: 1460px) { 
+    .school main article header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    footer .fonti nav ul {
+        margin: 4rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        list-style: none;
+        
+    }
+
+
+}
